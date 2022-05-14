@@ -1,0 +1,28 @@
+// PALETA DE COLORES
+$color1: #161616;
+$color2:#242424;
+$color3:#fff;
+$color4:#F84000;
+$color5:#F28800;
+
+// Mixins
+@mixin sizes ($height, $width, $bcolor){
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+}
+
+// CODIGO ESTILO
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color3;
+}
+
+// INDEX
+@import "_index"
