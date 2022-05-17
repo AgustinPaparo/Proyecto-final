@@ -128,15 +128,6 @@ header .btn:active {
   color: #F84000;
 }
 
-footer {
-  border-top: 2px solid #F28800;
-  color: #F28800;
-  background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
-  height: 50px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
 @media only screen and (max-width: 992px) {
   .SecOpiniones .titulo-opiniones div h2 {
     font-size: 200%;
@@ -171,5 +162,129 @@ footer {
   footer .arriba {
     display: none;
   }
+}
+
+/* Main DESARROLLO */
+.text1 {
+  height: auto;
+  width: 100%;
+  background-color: #242424;
+  text-align: justify;
+  color: #fff;
+  font-size: 100%;
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: 500;
+}
+
+.text1 h1 {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 250%;
+  color: #fff;
+}
+
+.text1 h1 span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 130%;
+  color: #F84000;
+}
+
+.text1 strong {
+  color: #F28800;
+  font-size: 120%;
+}
+
+.carousel-item {
+  height: 500px;
+  background-color: #242424;
+  color: #fff;
+  position: relative;
+  background-position: center;
+}
+
+.carousel-item .overlay-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.carousel-item .titulo-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* FORM DESARROLLO */
+.formulario {
+  background-image: radial-gradient(circle, #a1a1a1, #818181, #626262, #444444, #292929, #1e1e1e, #121212, #000000, #000000, #000000, #000000, #000000);
+}
+
+.formulario h3 {
+  color: #F84000;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+}
+
+.formulario label {
+  color: #F28800;
+  font-weight: 700;
+}
+
+.formulario .btn {
+  min-width: 130px;
+  height: 40px;
+  color: #F28800;
+  padding: 5px 10px;
+  font-family: 'M PLUS 1', sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #bdc3c7 0%, #242424 75%);
+  -webkit-box-shadow: 0 5px #242424;
+          box-shadow: 0 5px #242424;
+}
+
+.formulario .btn:hover {
+  background-position: right center;
+  -webkit-box-shadow: 0 3px #242424;
+          box-shadow: 0 3px #242424;
+  top: 3px;
+}
+
+@media only screen and (max-width: 440px) {
+  .text1 div {
+    padding: 10px !important;
+  }
+  .text1 h1 {
+    font-size: 200%;
+  }
+  .formulario h3 {
+    font-size: 180%;
+  }
+}
+
+footer {
+  border-top: 2px solid #F28800;
+  color: #F28800;
+  background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
