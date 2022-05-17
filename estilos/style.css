@@ -196,7 +196,8 @@ header .btn:active {
 }
 
 .carousel-item {
-  height: 500px;
+  height: 600px;
+  width: 100%;
   background-color: #242424;
   color: #fff;
   position: relative;
@@ -276,6 +277,82 @@ header .btn:active {
   }
   .formulario h3 {
     font-size: 180%;
+  }
+}
+
+.SecRecorrido h1 {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 250%;
+}
+
+.SecRecorrido h1 span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 130%;
+  color: #F84000;
+}
+
+.SecRecorrido .row .texto {
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.SecRecorrido .row .texto span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 130%;
+  color: #F84000;
+}
+
+.secHistorias h1 {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 250%;
+}
+
+.secHistorias h1 span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 130%;
+  color: #F84000;
+}
+
+.secHistorias .img1, .secHistorias .img2 {
+  height: 400px;
+  width: 550px;
+}
+
+.secHistorias .hist--texto1 {
+  text-align: justify;
+  font-size: 100%;
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: 500;
+  color: #161616;
+}
+
+.secHistorias .hist--texto2 {
+  text-align: justify;
+  font-size: 100%;
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media only screen and (max-width: 440px) {
+  .secHistorias h1 {
+    font-size: 200%;
+  }
+  .secHistorias h1 span {
+    font-size: 120%;
+  }
+  .secHistorias .img1, .secHistorias .img2, .secHistorias .img2 {
+    height: 300px;
+  }
+  .secHistorias .hist--texto1, .secHistorias .hist--texto2 {
+    font-size: 90%;
   }
 }
 

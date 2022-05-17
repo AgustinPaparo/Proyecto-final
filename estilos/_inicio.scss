@@ -33,8 +33,7 @@
 // CARRUSEL
 
 .carousel-item {
-    height: 500px;
-    background-color: $color2;
+    @include sizes (600px, 100%, $color2);
     color: $color3;
     position: relative;
     background-position: center;
