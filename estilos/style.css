@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  background-image: url(/img/pexels-sebastian-beck-2397262.jpg);
+  background-image: url(../img/pexels-sebastian-beck-2397262.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
