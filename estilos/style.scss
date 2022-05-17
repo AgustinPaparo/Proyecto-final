@@ -6,7 +6,7 @@ $color4:#F84000;
 $color5:#F28800;
 
 // Mixins
-@mixin sizes ($height, $width, $bcolor){
+@mixin sizes ($height, $width, $bcolor) {
     height: $height;
     width: $width;
     background-color: $bcolor;
@@ -24,5 +24,49 @@ body {
     background-color: $color3;
 }
 
+// NAVBAR
+.navbar {
+    border-bottom: 2px solid $color5;
+    background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+
+    .navbar-brand {
+        font-size: 20px;
+        font-family: 'M PLUS 1', sans-serif;
+        font-weight: 500;
+        color: $color5;
+    }
+
+    .navegacion li a {
+        font-size: 18px;
+        font-family: 'M PLUS 1', sans-serif;
+    }
+}
+
+// FIN NAVBAR
+
 // INDEX
-@import "_index"
+@import "_index";
+
+// INICIO
+@import "_inicio";
+
+//RECORRIDO
+@import "_recorrido";
+
+// HISTORIA
+@import "_historia";
+
+// FOTOS
+@import "_fotos";
+
+// FOOTER
+footer {
+    border-top: 2px solid $color5;
+    color: $color5;
+    background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+// FIN FOOTER

@@ -1,0 +1,123 @@
+/* Main DESARROLLO */
+
+
+// MAIN TITULO
+.text1 {
+    @include sizes (auto, 100%, $color2);
+    text-align: justify;
+    color: $color3;
+    font-size: 100%;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 500;
+
+    h1 {
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 250%;
+        color: $color3;
+
+        span {
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 130%;
+            color: $color4;
+        }
+    }
+
+    strong {
+        color: $color5;
+        font-size: 120%;
+    }
+}
+
+// CARRUSEL
+
+.carousel-item {
+    @include sizes (600px, 100%, $color2);
+    color: $color3;
+    position: relative;
+    background-position: center;
+
+
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.7;
+    }
+
+    .titulo-item {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+/* FORM DESARROLLO */
+
+.formulario {
+    background-image: radial-gradient(circle, #a1a1a1, #818181, #626262, #444444, #292929, #1e1e1e, #121212, #000000, #000000, #000000, #000000, #000000);
+
+
+    h3 {
+        color: $color4;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 35px;
+    }
+
+    label {
+        color: $color5;
+        font-weight: 700;
+    }
+
+    .btn {
+        min-width: 130px;
+        height: 40px;
+        color: $color5;
+        padding: 5px 10px;
+        font-family: 'M PLUS 1', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 7px;
+        border: none;
+        background-size: 120% auto;
+        background-image: linear-gradient(315deg, #bdc3c7 0%, $color2 75%);
+        box-shadow: 0 5px $color2;
+    }
+
+    .btn:hover {
+        background-position: right center;
+        box-shadow: 0 3px $color2;
+        top: 3px;
+    }
+}
+
+// MEDIAS QUERYS
+@media only screen and (max-width:440px) {
+    .text1 {
+        div {
+            padding: 10px !important;
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+    }
+
+    .formulario {
+        h3 {
+            font-size: 180%;
+        }
+    }
+}
