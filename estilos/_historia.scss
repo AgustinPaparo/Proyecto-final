@@ -23,8 +23,7 @@
     }
 
     // Declaro mi mapa
-    $textos: (
-        texto1: $color1,
+    $textos: (texto1: $color1,
         texto2: $color3,
     );
 
@@ -46,18 +45,20 @@
     .secHistorias {
         h1 {
             font-size: 200%;
-    
+
             span {
                 font-size: 120%;
             }
         }
 
-        .img1, .img2{
+        .img1,
+        .img2 {
             height: 300px;
         }
 
-        .hist--texto1, .hist--texto2{
+        .hist--texto1,
+        .hist--texto2 {
             font-size: 90%;
         }
-}
+    }
 }

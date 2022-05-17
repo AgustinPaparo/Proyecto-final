@@ -37,9 +37,9 @@
     color: $color3;
     position: relative;
     background-position: center;
-    
 
-    .overlay-image{
+
+    .overlay-image {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -105,16 +105,18 @@
 
 // MEDIAS QUERYS
 @media only screen and (max-width:440px) {
-    .text1{
-        div{
+    .text1 {
+        div {
             padding: 10px !important;
         }
-        h1{
+
+        h1 {
             font-size: 200%;
         }
     }
-    .formulario{
-        h3{
+
+    .formulario {
+        h3 {
             font-size: 180%;
         }
     }

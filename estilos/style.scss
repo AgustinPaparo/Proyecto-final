@@ -6,7 +6,7 @@ $color4:#F84000;
 $color5:#F28800;
 
 // Mixins
-@mixin sizes ($height, $width, $bcolor){
+@mixin sizes ($height, $width, $bcolor) {
     height: $height;
     width: $width;
     background-color: $bcolor;
@@ -41,10 +41,11 @@ body {
         font-family: 'M PLUS 1', sans-serif;
     }
 }
+
 // FIN NAVBAR
 
 // INDEX
-@import "_index" ;
+@import "_index";
 
 // INICIO
 @import "_inicio";
@@ -55,6 +56,9 @@ body {
 // HISTORIA
 @import "_historia";
 
+// FOTOS
+@import "_fotos";
+
 // FOOTER
 footer {
     border-top: 2px solid $color5;
@@ -64,4 +68,5 @@ footer {
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
 // FIN FOOTER
