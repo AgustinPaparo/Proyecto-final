@@ -61,6 +61,56 @@
     }
 }
 
+/* EPOCAS */
+.epocas {
+    .titulo-epoca {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+        img{
+            max-height: 200px;
+            max-width: 250px;
+        }
+
+        h2 {
+            font-family: cursive;
+            font-weight: 500;
+            font-size: 230%;
+            color: $color1;
+
+            span {
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 130%;
+                color: $color4;
+            }
+        }
+    }
+
+    .texto-epoca {
+        p {
+            text-align: justify;
+            color: $color1;
+            font-size: 100%;
+            font-family: 'M PLUS 1', sans-serif;
+            font-weight: 500;
+
+            strong {
+                color: $color4;
+                font-size: 110%;
+            }
+        }
+        ul{
+            li{
+                list-style:square;
+            }
+        }
+
+    }
+}
+
 /* FORM DESARROLLO */
 
 .formulario {
@@ -104,6 +154,7 @@
 }
 
 // MEDIAS QUERYS
+
 @media only screen and (max-width:440px) {
     .text1 {
         div {
@@ -118,6 +169,19 @@
     .formulario {
         h3 {
             font-size: 180%;
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    .epocas{
+
+        .titulo-epoca{
+            justify-content: center;
+
+            img{
+                display: none;
+            }
         }
     }
 }
