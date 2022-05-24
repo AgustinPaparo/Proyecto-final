@@ -76,6 +76,14 @@ header .btn:active {
   top: 5px;
 }
 
+.separador {
+  height: 150px;
+  background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
+  margin-bottom: 0;
+}
+
 .SecOpiniones .titulo-opiniones {
   max-height: 200px;
   text-align: justify;
