@@ -21,7 +21,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Link Estilos -->
-    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
 
     <!-- Links FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,10 +63,13 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="inicio.html">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Recorrido</a>
-                        <ol class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- Dropdown split -->
+                    <li class="nav-item btn-group dropdown">
+                        <a type="button" class="nav-link" href="recorrido.html">Recorrido</a>
+                        <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="recorrido.html#1">Santa Cruz</a></li>
                             <li><a class="dropdown-item" href="recorrido.html#2">Chubut</a></li>
                             <li><a class="dropdown-item" href="recorrido.html#3">Rio Negro</a></li>
@@ -78,13 +81,13 @@
                             <li><a class="dropdown-item" href="recorrido.html#9">Tucuman</a></li>
                             <li><a class="dropdown-item" href="recorrido.html#10">Salta</a></li>
                             <li><a class="dropdown-item" href="recorrido.html#11">Jujuy</a></li>
-                        </ol>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="historia.html">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/fotos.html">Fotos</a>
+                        <a class="nav-link" href="fotos.html">Fotos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="inicio.html#contacto">Contacto</a>
@@ -236,10 +239,43 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
     <!-- Fin Carrusel -->
 
-    <!-- Fin MAIN -->
+    <!-- Inicio CUANDO RECORRER -->
+    <div class="epocas container bg-light">
+        <div class="row">
+            <div class="titulo-epoca col-12 d-flex">
+                <img src="../img/primavera en chubut.jpg" alt="Primavera en chubut" class="img fluid">
+                <h2>¿<span>C</span>uando <span>R</span>ealizar <span>E</span>l <span>R</span>ecorrido<span>?</span></h2>
+                <img src="../img/otoño en neuquen.jpg" alt="Otoño en neuquen" class="img fluid">
+            </div>
+            <div class="row">
+                <div class="texto-epoca col-12">
+                    <p>Esto dependerá del recorrido que quieras efectuar y cuáles zonas vas a visitar. La Ruta 40
+                        recorre la Argentina de sur a norte atravesando distintas regiones con sus propios climas que
+                        varían a lo largo del año:</p>
+                    <ul>
+                        <li>
+                            <p>El <strong>verano</strong> en el norte es una estación de calor intenso y lluvias. Es una
+                                época agradable para recorrer la ruta desde el centro hacia el sur.</p>
+                        </li>
+                        <li>
+                            <p>El <strong>invierno</strong> en la zona patagónica es una estación de heladas y nieve.
+                                Por lo tanto, es conveniente recorrer la zona norte para evitar hielo en las rutas. Sin
+                                embargo los paisajes con nieve son muy atractivos también.</p>
+                        </li>
+                        <li>
+                            <p>El <strong>otoño</strong> y la <strong>primavera</strong> son ideales a lo largo de toda
+                                la ruta por ser el clima más moderado. Beneficios extra: en esta época los paisajes son
+                                bellísimos y hay pocos turistas circulando.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin CUANDO RECORRER -->
 
     <!-- Inicio Formulario -->
     <form class="formulario row g-3 pt-2 m-0 needs-validation d-felx justify-content-center align-content-center"

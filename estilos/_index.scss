@@ -1,6 +1,6 @@
 // HEADER
 header {
-    background-image: url(/img/pexels-sebastian-beck-2397262.jpg);
+    background-image: url(../img/pexels-sebastian-beck-2397262.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -42,9 +42,15 @@ header {
         top: 5px;
     }
 }
-
 // FIN HEADER
 
+// SEPARADOR
+.separador{
+    height: 150px;
+    background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
+    margin-bottom: 0;
+}
 // OPINIONES
 .SecOpiniones {
 

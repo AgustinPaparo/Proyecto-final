@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  background-image: url(/img/pexels-sebastian-beck-2397262.jpg);
+  background-image: url(../img/pexels-sebastian-beck-2397262.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -74,6 +74,14 @@ header .btn:active {
   -webkit-box-shadow: 0 0 #242424;
           box-shadow: 0 0 #242424;
   top: 5px;
+}
+
+.separador {
+  height: 150px;
+  background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
+  margin-bottom: 0;
 }
 
 .SecOpiniones .titulo-opiniones {
@@ -225,6 +233,54 @@ header .btn:active {
   text-align: center;
 }
 
+/* EPOCAS */
+.epocas .titulo-epoca {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.epocas .titulo-epoca img {
+  max-height: 200px;
+  max-width: 250px;
+}
+
+.epocas .titulo-epoca h2 {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 230%;
+  color: #161616;
+}
+
+.epocas .titulo-epoca h2 span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 130%;
+  color: #F84000;
+}
+
+.epocas .texto-epoca p {
+  text-align: justify;
+  color: #161616;
+  font-size: 100%;
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: 500;
+}
+
+.epocas .texto-epoca p strong {
+  color: #F84000;
+  font-size: 110%;
+}
+
+.epocas .texto-epoca ul li {
+  list-style: square;
+}
+
 /* FORM DESARROLLO */
 .formulario {
   background-image: radial-gradient(circle, #a1a1a1, #818181, #626262, #444444, #292929, #1e1e1e, #121212, #000000, #000000, #000000, #000000, #000000);
@@ -277,6 +333,17 @@ header .btn:active {
   }
   .formulario h3 {
     font-size: 180%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .epocas .titulo-epoca {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .epocas .titulo-epoca img {
+    display: none;
   }
 }
 
