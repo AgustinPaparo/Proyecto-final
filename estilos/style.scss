@@ -4,6 +4,7 @@ $color2:#242424;
 $color3:#fff;
 $color4:#F84000;
 $color5:#F28800;
+$color6:#ffc38c;
 
 // Mixins
 @mixin sizes ($height, $width, $bcolor) {
@@ -54,7 +55,7 @@ body {
 @import "_recorrido";
 
 // HISTORIA
-@import "_historia";
+@import "_datos";
 
 // FOTOS
 @import "_fotos";
@@ -67,6 +68,11 @@ footer {
     height: 50px;
     padding-top: 20px;
     padding-bottom: 50px;
+    
+    a{
+        i{
+            font-size: 35px;
+            color: $color5;
+        }
+    }
 }
-
-// FIN FOOTER

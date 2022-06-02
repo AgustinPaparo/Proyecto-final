@@ -1,8 +1,18 @@
+.body{
+    background-image: url(../img/fondovert.svg);
+    background-position: center;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0 20px 0 ;
+}
+
 .SecRecorrido {
+
     h1 {
         font-family: cursive;
         font-weight: 500;
-        font-size: 250%;
+        font-size: 300%;
 
         span {
             font-family: sans-serif;
@@ -13,6 +23,8 @@
     }
 
     .row {
+        box-shadow: 5px 5px 10px;
+
         .texto {
             text-align: justify;
             align-self: center;
@@ -24,5 +36,13 @@
                 color: $color4;
             }
         }
+    }
+}
+
+// MEDIA QUERYS
+
+@media only screen and (max-width:576px){
+    .body{
+        background-image: none;
     }
 }
