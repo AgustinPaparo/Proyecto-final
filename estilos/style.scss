@@ -27,6 +27,7 @@ body {
 
 // NAVBAR
 .navbar {
+    z-index: 1;
     border-bottom: 2px solid $color5;
     background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
 

@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+  z-index: 1;
   border-bottom: 2px solid #F28800;
   background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
 }
@@ -434,8 +435,79 @@ header .btn:active {
   }
 }
 
-/* EPOCAS */
-.epocas .titulo-epoca {
+.opacity {
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  background-color: #242424;
+  position: relative;
+  background-position: center;
+}
+
+.opacity .imagenFondo {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-image: url(../img/FitzRoy.jpg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.opacity .tituloDatos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+}
+
+.opacity .tituloDatos h1 {
+  color: #fff;
+  font-size: 350%;
+  font-weight: 500;
+}
+
+.opacity .tituloDatos h1 span {
+  color: #F28800;
+}
+
+.opacity .tituloDatos p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.opacity .tituloDatos p strong {
+  color: #F28800;
+}
+
+.contDatos {
+  background-image: url(../img/fondovert.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 20px 0;
+}
+
+/* DATOS */
+.contTransparente {
+  -webkit-box-shadow: 0 20px 50px;
+          box-shadow: 0 20px 50px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.788);
+  position: relative;
+  top: -100px;
+  bottom: 0;
+}
+
+.contTransparente .titulo-epoca, .contTransparente .tituloTiempo, .contTransparente .tituloEquipaje {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -446,56 +518,147 @@ header .btn:active {
   padding: 20px;
 }
 
-.epocas .titulo-epoca img {
+.contTransparente .titulo-epoca img, .contTransparente .tituloTiempo img, .contTransparente .tituloEquipaje img {
   max-height: 200px;
   max-width: 250px;
 }
 
-.epocas .titulo-epoca h2 {
+.contTransparente .titulo-epoca h2, .contTransparente .tituloTiempo h2, .contTransparente .tituloEquipaje h2 {
   font-family: cursive;
   font-weight: 500;
   font-size: 230%;
   color: #161616;
 }
 
-.epocas .titulo-epoca h2 span {
+.contTransparente .titulo-epoca h2 span, .contTransparente .tituloTiempo h2 span, .contTransparente .tituloEquipaje h2 span {
   font-family: sans-serif;
   font-weight: 700;
   font-size: 130%;
   color: #F84000;
 }
 
-.epocas .texto-epoca p {
+.contTransparente .texto-epoca p, .contTransparente .textoTiempo p, .contTransparente .textoEquipaje p {
   text-align: justify;
   color: #161616;
-  font-size: 100%;
+  font-size: 110%;
   font-family: 'M PLUS 1', sans-serif;
   font-weight: 500;
 }
 
-.epocas .texto-epoca p span {
+.contTransparente .texto-epoca p span, .contTransparente .textoTiempo p span, .contTransparente .textoEquipaje p span {
   color: #161616;
   font-size: 110%;
   font-weight: 700;
 }
 
-.epocas .texto-epoca p strong {
+.contTransparente .texto-epoca p strong, .contTransparente .textoTiempo p strong, .contTransparente .textoEquipaje p strong {
   color: #F84000;
   font-size: 110%;
 }
 
-.epocas .texto-epoca ul li {
+.contTransparente .texto-epoca p ul li, .contTransparente .textoTiempo p ul li, .contTransparente .textoEquipaje p ul li {
   list-style: square;
 }
 
+.contTransparente .textoTiempo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contTransparente .textoTiempo h6 {
+  color: #F84000;
+  font-size: 130%;
+  font-weight: 700;
+}
+
+.contTransparente .textoTiempo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.contTransparente .tituloEquipaje {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contTransparente .tituloEquipaje img {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.contTransparente .textoEquipaje {
+  padding-bottom: 100px;
+}
+
 @media only screen and (max-width: 992px) {
-  .epocas .titulo-epoca {
+  .contTransparente .titulo-epoca, .contTransparente .tituloTiempo, .contTransparente .tituloEquipaje {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .epocas .titulo-epoca img {
+  .contTransparente .titulo-epoca h2, .contTransparente .tituloTiempo h2, .contTransparente .tituloEquipaje h2 {
+    font-size: 180%;
+  }
+  .contTransparente .titulo-epoca h2 span, .contTransparente .tituloTiempo h2 span, .contTransparente .tituloEquipaje h2 span {
+    font-size: 120%;
+  }
+  .contTransparente .titulo-epoca img, .contTransparente .tituloTiempo img, .contTransparente .tituloEquipaje img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .opacity .tituloDatos h1 {
+    font-size: 250%;
+  }
+  .opacity .tituloDatos p {
+    font-size: 18px;
+  }
+  .contDatos {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .contDatos .contTransparente .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .opacity .tituloDatos h1 {
+    font-size: 200%;
+  }
+  .opacity .tituloDatos p {
+    font-size: 14px;
+  }
+  .contDatos {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .contDatos .contTransparente .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .contDatos .contTransparente .titulo-epoca h2, .contDatos .contTransparente .tituloTiempo h2, .contDatos .contTransparente .tituloEquipaje h2 {
+    font-size: 150%;
+  }
+  .contDatos .contTransparente .titulo-epoca h2 span, .contDatos .contTransparente .tituloTiempo h2 span, .contDatos .contTransparente .tituloEquipaje h2 span {
+    font-size: 110%;
+  }
+  .contDatos .contTransparente .texto-epoca, .contDatos .contTransparente .textoTiempo, .contDatos .contTransparente .textoEquipaje {
+    font-size: 90%;
+  }
+  .contDatos .contTransparente .textoTiempo img {
+    height: 200px;
   }
 }
 
