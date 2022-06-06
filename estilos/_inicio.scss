@@ -7,6 +7,32 @@
     padding: 0px;
 }
 
+// MAPA
+.secMapa {
+    box-shadow: 0 20px 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.788);
+
+    h1 {
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 300%;
+        text-align: center;
+
+        span {
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 120%;
+            color: $color4;
+        }
+    }
+
+    p {
+        font-size: 115%;
+        padding: 0 50px;
+        text-align: justify;
+    }
+}
 
 // CARRUSEL
 
@@ -91,6 +117,11 @@
                 color: $color4;
             }
         }
+
+        .opi:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -112,11 +143,34 @@
                 span {
                     font-size: 100%;
                 }
+
+                .dibujo1 {
+                    display: none;
+                }
             }
         }
     }
 
+    .secMapa {
+        h1 {
+            font-size: 250%;
+        }
 
+        p {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:700px) {
+    .secMapa {
+        iframe {
+            width: 300px;
+        }
+    }
 }
 
 @media only screen and (max-width:996px) {

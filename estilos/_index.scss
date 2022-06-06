@@ -13,6 +13,7 @@ header {
     }
 
     .btn {
+        animation-iteration-count: infinite;
         min-width: 170px;
         max-width: 200px;
         height: 40px;
@@ -32,6 +33,7 @@ header {
     }
 
     .btn:hover {
+        animation-iteration-count: 0;
         background-position: right center;
         box-shadow: 0 3px $color2;
         top: 3px;
