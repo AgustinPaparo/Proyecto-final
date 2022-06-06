@@ -1,32 +1,36 @@
 /* Main DESARROLLO */
+.bodyInicio {
+    background-image: url(../img/fondovert.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
 
-
-// MAIN TITULO
-.text1 {
-    @include sizes (auto, 100%, $color2);
-    text-align: justify;
-    color: $color3;
-    font-size: 100%;
-    font-family: 'M PLUS 1', sans-serif;
-    font-weight: 500;
+// MAPA
+.secMapa {
+    box-shadow: 0 20px 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.788);
 
     h1 {
         font-family: cursive;
         font-weight: 500;
-        font-size: 250%;
-        color: $color3;
+        font-size: 300%;
+        text-align: center;
 
         span {
             font-family: sans-serif;
             font-weight: 700;
-            font-size: 130%;
+            font-size: 120%;
             color: $color4;
         }
     }
 
-    strong {
-        color: $color5;
-        font-size: 120%;
+    p {
+        font-size: 115%;
+        padding: 0 50px;
+        text-align: justify;
     }
 }
 
@@ -61,126 +65,130 @@
     }
 }
 
-/* EPOCAS */
-.epocas {
-    .titulo-epoca {
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
+// OPINIONES
+.SecOpiniones {
+    box-shadow: 5px 5px 10px;
+    border-radius: 50px;
 
-        img{
-            max-height: 200px;
-            max-width: 250px;
+    .titulo-opiniones {
+        max-height: 200px;
+        text-align: justify;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+
+            img {
+                max-height: 200px;
+            }
+
+            h2 {
+                font-family: cursive;
+                font-weight: 500;
+                font-size: 250%;
+                text-align: center;
+
+                span {
+                    font-family: sans-serif;
+                    font-weight: 700;
+                    font-size: 130%;
+                    color: $color4;
+                }
+            }
         }
+    }
 
-        h2 {
-            font-family: cursive;
-            font-weight: 500;
-            font-size: 230%;
-            color: $color1;
+    .opiniones {
+        margin-top: 100px;
+
+        p {
+            border: 3px solid $color5;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px;
+            text-align: justify;
+            padding: 30px 10px;
 
             span {
                 font-family: sans-serif;
                 font-weight: 700;
-                font-size: 130%;
+                font-size: 120%;
                 color: $color4;
             }
         }
-    }
 
-    .texto-epoca {
-        p {
-            text-align: justify;
-            color: $color1;
-            font-size: 100%;
-            font-family: 'M PLUS 1', sans-serif;
-            font-weight: 500;
-
-            strong {
-                color: $color4;
-                font-size: 110%;
-            }
+        .opi:hover {
+            cursor: pointer;
+            transform: scale(1.05);
         }
-        ul{
-            li{
-                list-style:square;
-            }
-        }
-
     }
 }
 
-/* FORM DESARROLLO */
-
-.formulario {
-    background-image: radial-gradient(circle, #a1a1a1, #818181, #626262, #444444, #292929, #1e1e1e, #121212, #000000, #000000, #000000, #000000, #000000);
-
-
-    h3 {
-        color: $color4;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 35px;
-    }
-
-    label {
-        color: $color5;
-        font-weight: 700;
-    }
-
-    .btn {
-        min-width: 130px;
-        height: 40px;
-        color: $color5;
-        padding: 5px 10px;
-        font-family: 'M PLUS 1', sans-serif;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 7px;
-        border: none;
-        background-size: 120% auto;
-        background-image: linear-gradient(315deg, #bdc3c7 0%, $color2 75%);
-        box-shadow: 0 5px $color2;
-    }
-
-    .btn:hover {
-        background-position: right center;
-        box-shadow: 0 3px $color2;
-        top: 3px;
-    }
-}
+// FIN OPINIONES
 
 // MEDIAS QUERYS
 
 @media only screen and (max-width:440px) {
-    .text1 {
-        div {
-            padding: 10px !important;
-        }
+    .SecOpiniones {
+        border-radius: 0;
 
-        h1 {
-            font-size: 200%;
+        .titulo-opiniones {
+            div {
+
+                h2 {
+                    font-size: 150%;
+                }
+
+                span {
+                    font-size: 100%;
+                }
+
+                .dibujo1 {
+                    display: none;
+                }
+            }
         }
     }
 
-    .formulario {
-        h3 {
-            font-size: 180%;
+    .secMapa {
+        h1 {
+            font-size: 250%;
+        }
+
+        p {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:700px) {
+    .secMapa {
+        iframe {
+            width: 300px;
         }
     }
 }
 
-@media only screen and (max-width:992px){
-    .epocas{
+@media only screen and (max-width:996px) {
+    .SecOpiniones {
+        .titulo-opiniones {
+            div {
 
-        .titulo-epoca{
-            justify-content: center;
+                h2 {
+                    font-size: 200%;
+                }
 
-            img{
-                display: none;
+                span {
+                    font-size: 110%;
+                }
+
+                .dibujo2 {
+                    display: none;
+                }
             }
         }
     }

@@ -4,6 +4,7 @@ $color2:#242424;
 $color3:#fff;
 $color4:#F84000;
 $color5:#F28800;
+$color6:#ffc38c;
 
 // Mixins
 @mixin sizes ($height, $width, $bcolor) {
@@ -26,6 +27,7 @@ body {
 
 // NAVBAR
 .navbar {
+    z-index: 1;
     border-bottom: 2px solid $color5;
     background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000);
 
@@ -54,7 +56,7 @@ body {
 @import "_recorrido";
 
 // HISTORIA
-@import "_historia";
+@import "_datos";
 
 // FOTOS
 @import "_fotos";
@@ -67,6 +69,11 @@ footer {
     height: 50px;
     padding-top: 20px;
     padding-bottom: 50px;
-}
 
-// FIN FOOTER
+    a {
+        i {
+            font-size: 35px;
+            color: $color5;
+        }
+    }
+}
